@@ -2,31 +2,15 @@
   <div id="app">
     <div class="ywtop">
       <div class="ywtop_con">
-        <div class="ywtop_sethome">
-          <a href="https://www.mayiwsk.com/123_123192/index.html#"
-            >将蚂蚁文学快捷键下载到桌面</a
-          >
-        </div>
-        <div class="ywtop_addfavorite">
-          <a href="https://www.mayiwsk.com/123_123192/index.html#"
-            >收藏蚂蚁文学</a
-          >
-        </div>
         <div class="nri">
-          Hi,<a
-            href="https://www.mayiwsk.com/userdetail.php?uid=213"
-            target="_top"
-            >User</a
-          >&nbsp;&nbsp;<a
+          Hi,User
+          &nbsp;&nbsp;<a
             href="https://www.mayiwsk.com/modules/article/bookcase.php"
             target="_top"
             >我的书架</a
           >
           |
-          <a href="https://www.mayiwsk.com/message.php?box=inbox" target="_top"
-            >查看短信</a
-          >
-          |
+          
           <a href="https://www.mayiwsk.com/userdetail.php?uid=213" target="_top"
             >查看资料</a
           >
@@ -37,19 +21,19 @@
         </div>
       </div>
     </div>
+
     <div class="header">
-      <div class="header_logo">
-        <a href="https://www.mayiwsk.com/">蚂蚁文学</a>
-      </div>
-    
       <div class="header_search">
-        <div class="_17mb_searchtype"><span>书名</span></div>
+
         <form
           name="form"
           action="https://www.mayiwsk.com/modules/article/search.php"
           id="sform"
           method="post"
-        >
+        ><select id="stype" name="searchtype" style="displany: none">
+            <option value="articlename" selected="">书名</option>
+            <option value="author">作者</option>
+          </select>
           <input
             type="text"
             value="可搜书名和作者，请您少字也别输错字。"
@@ -59,10 +43,7 @@
             onclick="ttt()"
             baidusug="2"
           /><button id="sss" type="submit">搜 索</button
-          ><select id="stype" name="searchtype" style="displany: none">
-            <option value="articlename" selected="">书名</option>
-            <option value="author">作者</option>
-          </select>
+          >
         </form>
       </div>
     </div>
@@ -116,22 +97,18 @@
         </div>
         <div id="intro">
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;【原神+女尊+恋爱+修罗场】\n白明穿越了，穿越到提瓦特大陆。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;\n觉醒了七窍玲珑心体质，以及和重要人物接触就能开启宝箱的金手指。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;\n开局被留云借风真君捡到，需要白明助她修行。\n好不容易从那头母鹤的魔爪中逃脱，却发现自己来到了一个认知之外的原神世界。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;\n这里性别地位发生了逆转，女生负责赚钱养家，女生负责保家卫国。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;\n男生只负责貌美如花，在那些强大地位的女性保护之下。\n白明作为世间独一无二者，刚一出现，直接引发了所有女性的轰动！<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;\n凝光：男人，你引起我的注意！\n香菱：想要抓住白明的心，先要抓住白明的胃！<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;\n胡桃：白明白明，我卖棺材本来娶你好不好！\n雷电影：永恒与白明相比，还是白明更加重要。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;\n.....\n面对这些女生的强硬纠缠，白明唯有苦苦招架。\n关键是为了开启宝箱，他还必须要与女孩子接触...
+            &nbsp;&nbsp;&nbsp;&nbsp;【原神+女尊+恋爱+修罗场】<br>白明穿越了，穿越到提瓦特大陆。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<br>觉醒了七窍玲珑心体质，以及和重要人物接触就能开启宝箱的金手指。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<br>开局被留云借风真君捡到，需要白明助她修行。<br>好不容易从那头母鹤的魔爪中逃脱，却发现自己来到了一个认知之外的原神世界。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<br>这里性别地位发生了逆转，女生负责赚钱养家，女生负责保家卫国。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<br>男生只负责貌美如花，在那些强大地位的女性保护之下。<br>白明作为世间独一无二者，刚一出现，直接引发了所有女性的轰动！<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<br>凝光：男人，你引起我的注意！<br>香菱：想要抓住白明的心，先要抓住白明的胃！<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<br>胡桃：白明白明，我卖棺材本来娶你好不好！<br>雷电影：永恒与白明相比，还是白明更加重要。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;<br>.....<br>面对这些女生的强硬纠缠，白明唯有苦苦招架。<br>关键是为了开启宝箱，他还必须要与女孩子接触...
           </p>
         </div>
       </div>
       <div id="sidebar">
         <div id="fmimg">
           <img
-            src="./女尊原神：胡桃卖棺材本只为娶我最新章节列表_蚂蚁文学_files/123192s.jpg"
+            src="../assets/ChapterList/123192s.jpg"
           /><span class="b"></span>
         </div>
       </div>
     </div>
-
-    <!-- <script>
-      list2();
-    </script> -->
     <p align="center"></p>
 
     <div class="box_con">
@@ -173,11 +150,6 @@
         </dl>
       </div>
     </div>
-    <!-- <script>
-      list3();
-    </script> -->
-    <p align="center"></p>
-    <!-- <script src="/modules/article/articleinfo.php?id=123192"></script> -->
   </div>
 </template>
 
@@ -185,4 +157,107 @@
 </script>
 
 <style>
+body {
+  background-color: #FFDAB9;
+}
+
+h1 {
+  color: #FF1493;
+  animation: rainbow-text 2s infinite;
+}
+
+@keyframes rainbow-text {
+  0% {
+    color: #FF1493;
+  }
+  16.66% {
+    color: #FF4500;
+  }
+  33.33% {
+    color: #FFFF00;
+  }
+  50% {
+    color: #00FF00;
+  }
+  66.66% {
+    color: #1E90FF;
+  }
+  83.33% {
+    color: #8B00FF;
+  }
+  100% {
+    color: #FF1493;
+  }
+}
+
+a {
+  color: #1E90FF;
+  text-decoration: none;
+  animation: underline 1s infinite;
+}
+
+@keyframes underline {
+  0% {
+    border-bottom: 2px solid #1E90FF;
+  }
+  50% {
+    border-bottom: 2px solid #FF1493;
+  }
+  100% {
+    border-bottom: 2px solid #1E90FF;
+  }
+}
+
+button {
+  background-color: #FF1493;
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFF;
+  color: #FF1493;
+  box-shadow: 0px 0px 10px #FF1493;
+}
+body {
+  text-align: center;
+}
+
+.box_con {
+  text-align: center; /* 重置盒子内文本对齐方式 */
+}
+
+.header_search {
+  display: inline-block; /* 让搜索框水平居中 */
+}
+
+.nav ul {
+  display: inline-block; /* 让导航菜单水平排列 */
+  text-align: center; /* 让导航菜单内部文字居中 */
+}
+.nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#maininfo, #intro {
+  text-align: center; /* 重置主要内容和介绍文本对齐方式 */
+}
+
+#list {
+  text-align: center; /* 重置章节列表文本对齐方式 */
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+    /* background: linear-gradient(to right, #ff9a9e, #fad0c4); */
+}
+
+
 </style>

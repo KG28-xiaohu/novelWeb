@@ -1,75 +1,5 @@
 <template>
   <div class="app">
-    <div class="ywtop">
-      <div class="ywtop_con">
-        <div class="nri">
-          Hi,<a
-            href="https://www.mayiwsk.com/userdetail.php?uid=213"
-            target="_top"
-            >User</a
-          >&nbsp;&nbsp;<a
-            href="https://www.mayiwsk.com/modules/article/bookcase.php"
-            target="_top"
-            >我的书架</a
-          >
-          |
-          <a href="https://www.mayiwsk.com/userdetail.php?uid=213" target="_top"
-            >查看资料</a
-          >
-          |
-          <a href="https://www.mayiwsk.com/logout.php" target="_self"
-            >退出登录</a
-          >&nbsp;
-        </div>
-      </div>
-    </div>
-
-    <div class="header">
-      <div class="header_search">
-        <!-- <div class="_17mb_searchtype"><span>书名</span></div> -->
-          <select
-            id="stype"
-            name="searchtype"
-            style="displany: none; margin-right;: 10px"
-          >
-            <option value="articlename" selected="">书名</option>
-            <option value="author">作者</option>
-          </select>
-          <input
-            type="text"
-            value="可搜书名和作者，请您少字也别输错字。"
-            name="searchkey"
-            class="search"
-            id="searchkey"
-            onclick="ttt()"
-            baidusug="2"
-            autocomplete="off"
-            style="margin-left: 10px;"
-          /><button id="sss" type="submit">搜 索</button>
-      </div>
-    </div>
-    <div class="nav">
-      <ul>
-        <li><a href="https://www.mayiwsk.com/">首页</a></li>
-        <li>
-          <a href="https://www.mayiwsk.com/modules/article/bookcase.php"
-            >我的书架</a
-          >
-        </li>
-        <li>
-          <a href="https://www.mayiwsk.com/xuanhuanxiaoshuo/">玄幻小说</a>
-        </li>
-        <li><a href="https://www.mayiwsk.com/xiuzhenxiaoshuo/">修真小说</a></li>
-        <li><a href="https://www.mayiwsk.com/dushixiaoshuo/">都市小说</a></li>
-        <li>
-          <a href="https://www.mayiwsk.com/chuanyuexiaoshuo/">穿越小说</a>
-        </li>
-        <li><a href="https://www.mayiwsk.com/wangyouxiaoshuo/">网游小说</a></li>
-        <li><a href="https://www.mayiwsk.com/kehuanxiaoshuo/">科幻小说</a></li>
-        <li><a href="https://www.mayiwsk.com/paihangbang/">排行榜单</a></li>
-        <li><a href="https://www.mayiwsk.com/wanben/">完本小说</a></li>
-      </ul>
-    </div>
     <div id="main">
       <div id="content" style="width: 800px;margin-left: 400px;">
         <br />
@@ -236,7 +166,60 @@
   </div>
 </template>
 
-<script setup>
+<script>
+import axios from "../hooks/request.js"
+export default {
+  data() {
+    // 验证账号
+    var checkUserName = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error("请输入账号"));
+      }else{
+        callback();
+      }
+    }
+    var checkPassword = (rule, value, callback) => {
+      if (!value) {
+        callback(new Error("请输入密码"));
+      } else {
+        callback();
+      }
+    }
+    return {
+      // 登录账户
+      user: {
+        // 账号
+        username:"",
+        // 密码
+        password: "",
+      },
+      // 验证
+      rules: {
+        username: [{ validator: checkUserName, trigger: "blur" }],
+        password: [{ validator: checkPassword, trigger: "blur" }],
+      },
+    };
+  },
+  methods: {
+    login(){
+      axios.post("/user/login",{
+        account:this.user.username,
+        pwd:this.user.password
+      },{headers:{"Content-Type":"application/x-www-form-urlencoded"}})
+      .then((res) => {
+        if(res.data.code===200){
+          localStorage.setItem("token",res.data.data)
+          this.$router.push("/layout")
+        }else{
+          alert(res.data.msg)
+        }
+      })
+    },
+    resetForm(formName){
+      this.$refs[formName].resetFields();
+    },
+  },
+};
 </script>
 
 <style>

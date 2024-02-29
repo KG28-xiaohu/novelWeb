@@ -1,74 +1,5 @@
 <template>
   <div id="app" style="background-color: rgb(204, 232, 207)">
-    
-    <div class="ywtop">
-      <div class="ywtop_con">
-        <div class="nri">
-          Hi,<a
-            href="https://www.mayiwsk.com/userdetail.php?uid=213"
-            target="_top"
-            >User</a
-          >&nbsp;&nbsp;<a
-            href="https://www.mayiwsk.com/modules/article/bookcase.php"
-            target="_top"
-            >我的书架</a
-          >
-          |
-          <a href="https://www.mayiwsk.com/message.php?box=inbox" target="_top"
-            >查看信息</a
-          >
-          |
-        
-          <a href="https://www.mayiwsk.com/logout.php" target="_self"
-            >退出登录</a
-          >&nbsp;
-        </div>
-      </div>
-    </div>
-    <div class="header">
-     
-     
-      <div class="header_search">
-        <select id="stype" name="searchtype" style="displany: none">
-            <option value="articlename" selected="">书名</option>
-            <option value="author">作者</option>
-          </select>
-          <input
-            type="text"
-            value="可搜书名和作者，请您少字也别输错字。"
-            name="searchkey"
-            class="search"
-            id="searchkey"
-            onclick="ttt()"
-            baidusug="2"
-            autocomplete="off"
-          /><button id="sss" type="submit">搜 索</button
-          >
-        
-      </div>
-    </div>
-    <div class="nav">
-      <ul>
-        <li><a href="https://www.mayiwsk.com/">首页</a></li>
-        <li>
-          <a href="https://www.mayiwsk.com/modules/article/bookcase.php"
-            >我的书架</a
-          >
-        </li>
-        <li>
-          <a href="https://www.mayiwsk.com/xuanhuanxiaoshuo/">玄幻小说</a>
-        </li>
-        <li><a href="https://www.mayiwsk.com/xiuzhenxiaoshuo/">修真小说</a></li>
-        <li><a href="https://www.mayiwsk.com/dushixiaoshuo/">都市小说</a></li>
-        <li>
-          <a href="https://www.mayiwsk.com/chuanyuexiaoshuo/">穿越小说</a>
-        </li>
-        <li><a href="https://www.mayiwsk.com/wangyouxiaoshuo/">网游小说</a></li>
-        <li><a href="https://www.mayiwsk.com/kehuanxiaoshuo/">科幻小说</a></li>
-        <li><a href="https://www.mayiwsk.com/paihangbang/">排行榜单</a></li>
-        <li><a href="https://www.mayiwsk.com/wanben/">完本小说</a></li>
-      </ul>
-    </div>
     <div id="banner" style="display: none"></div>
     <div class="content_read">
       <div class="box_con">
@@ -210,7 +141,6 @@
               value=""
             />
           </div>
-
           <a href="https://www.mayiwsk.com/">蚂蚁文学</a> &gt;
           <a href="https://www.mayiwsk.com/123_123192/index.html"
             >女尊原神：胡桃卖棺材本只为娶我</a
@@ -232,11 +162,6 @@
             <a href="https://www.mayiwsk.com/123_123192/50506986.html"
               >下一章</a
             >
-            <!-- <a
-              href="javascript:;"
-              onclick="showpop(true, &#39;123192&#39;, &#39;50485775&#39;);"
-              >加入书签</a
-            > -->
           </div>
         </div>
 
@@ -261,9 +186,7 @@
           <br />
           <div id="center_tip"><b>最新网址：www.mayiwsk.com</b></div>
         </div>
-        <!-- <script>
-          read3();
-        </script> -->
+
         <div class="bottem2">
           <a href="javascript:;" onclick="showpop(false, &#39;123192&#39;);"
             >投推荐票</a
@@ -291,72 +214,7 @@ body {
   
 }
 
-/* 顶部导航样式 */
-.ywtop {
-  background-color: #fff;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background: pink;
-}
 
-.ywtop a {
-  text-decoration: none;
-  color: #555;
-  margin-right: 10px;
-}
-
-/* 头部样式 */
-.header {
-  background-color: #fff;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.header_search{
-  margin-left: 650px;
-}
-
-.search {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  
-}
-
-button {
-  padding: 8px 15px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-/* 导航样式 */
-.nav {
-  background-color: #333;
-  padding: 10px 0;
-}
-
-.nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.nav li {
-  margin-right: 10px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
 
 /* 内容区域样式 */
 .content_read {

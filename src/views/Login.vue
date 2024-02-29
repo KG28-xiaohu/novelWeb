@@ -1,48 +1,5 @@
 <template>
   <div id="app">
-    <div class="ywtop">
-      <div class="ywtop_con">
-        <div class="nav">
-      <ul>
-        <li><a href="https://www.mayiwsk.com/">首页</a></li>
-        <li>
-          <a href="https://www.mayiwsk.com/modules/article/bookcase.php"
-            >我的书架</a
-          >
-        </li>
-        <li>
-          <a href="https://www.mayiwsk.com/xuanhuanxiaoshuo/">玄幻小说</a>
-        </li>
-        <li><a href="https://www.mayiwsk.com/xiuzhenxiaoshuo/">修真小说</a></li>
-        <li><a href="https://www.mayiwsk.com/dushixiaoshuo/">都市小说</a></li>
-        <li>
-          <a href="https://www.mayiwsk.com/chuanyuexiaoshuo/">穿越小说</a>
-        </li>
-        <li><a href="https://www.mayiwsk.com/wangyouxiaoshuo/">网游小说</a></li>
-        <li><a href="https://www.mayiwsk.com/kehuanxiaoshuo/">科幻小说</a></li>
-        <li><a href="https://www.mayiwsk.com/paihangbang/">排行榜单</a></li>
-        <li><a href="https://www.mayiwsk.com/wanben/">完本小说</a></li>
-      </ul>
-    </div>
-    <div class="header">
-      <div class="header_search">
-
-        <select id="stype" name="searchtype" style="displany: none">
-            <option value="articlename" selected="">书名</option>
-            <option value="author">作者</option>
-          </select>
-          <input
-            type="text"
-            value="可搜书名和作者，请您少字也别输错字。"
-            name="searchkey"
-            class="search"
-            id="searchkey"
-            onclick="ttt()"
-            baidusug="2"
-          /><button id="sss" type="submit">搜 索</button
-          >
-      </div>
-    </div>
         <div class="nri">
             <div class="cc">
               <div class="txt">账号：</div>
