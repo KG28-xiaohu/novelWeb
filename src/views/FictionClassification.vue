@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="fictionclassfication">
     <router-view/>
     <div id="main">
       <div id="content">
@@ -220,7 +220,7 @@
 <script setup>
 </script>
 
-<style>
+<style scoped>
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;

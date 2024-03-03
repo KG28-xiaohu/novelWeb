@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="collection">
     <div id="banner" style="display: none"></div>
 
     <div id="main">
@@ -33,7 +33,7 @@
 <script>
 </script>
 
-<style>
+<style scoped>
 /* 设置页面背景色 */
 body {
   background:  #f2f2f2

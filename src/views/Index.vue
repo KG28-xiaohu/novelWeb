@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div class="home">
+    <top></top>
     <div id="main">
       <div id="hotcontent" class="mt10">
         <div class="l">
@@ -8,80 +8,63 @@
             <div class="image"><a href="https://www.mayiwsk.com/110_110570/index.html"><img
                   src="../assets/index//110570s.jpg" alt="我为长生仙" width="120" height="150"></a></div>
             <dl>
-              <dt><span>阎ZK</span><a href="https://www.mayiwsk.com/110_110570/index.html">我为长生仙</a></dt>
-              <dd> 仙神妖魔，王侯将相；龙女掌灯，杯中盛海。<br><br> 野狐参禅，猛虎悟道；朝游北海，暮走苍梧。<br><br> 仙神存世，妖魔立国。<br><br> 这些原本和齐无惑并没有半点关系。<br><br>
-                而总是在梦中看到方块文字的齐无惑，那时只想着能够参与来年的春试。<br><br> 直到在做黄粱饭的时候，有个老人给了他一个玉枕头，让他做了一个漫长的梦。<br><br> 黄粱一梦。<br><br>
-                …………<br><br> 黄粱梦醒破凡心，自此大开修行门。<br><br> 金乌飞，玉兔走。<br><br> 三界一粒粟，山河几年尘。<br><br> 把剑闲从闹市过。<br><br> 无人知我是真仙。
+              <dt><span>阎ZK</span><br><a href="https://www.mayiwsk.com/110_110570/index.html">我为长生仙</a></dt>
+              <dd> 仙神妖魔，王侯将相；龙女掌灯，杯中盛海。 野狐参禅，猛虎悟道；朝游北海，暮走苍梧。 仙神存世，妖魔立国。 这些原本和齐无惑并没有半点关系。
+                而总是在梦中看到方块文字的齐无惑，那时只想着能够参与来年的春试。 直到在做黄粱饭的时候，有个老人给了他一个玉枕头，让他做了一个漫长的梦。 黄粱一梦。
+                ………… 黄粱梦醒破凡心，自此大开修行门。 金乌飞，玉兔走。 三界一粒粟，山河几年尘。 把剑闲从闹市过。 无人知我是真仙。
               </dd>
             </dl>
-            <div class="clear"></div>
-          </div>
+          </div><br>
 
           <div class="item">
             <div class="image"><a href="https://www.mayiwsk.com/92_92526/index.html"><img src="../assets/index//92526s.jpg"
                   alt="高天之上" width="120" height="150"></a></div>
             <dl>
-              <dt><span>阴天神隐</span><a href="https://www.mayiwsk.com/92_92526/index.html">高天之上</a></dt>
-              <dd> “我根本不关心这个世界的人活的怎么样，吃的饱不饱，能不能穿暖住好，有没有梦想希望。我不在乎他们的爱憎。”<br><br>
-                “只是如果想要前往高天之上，需要一个完整的高等工业体系，一整套相关研究所，最先进的材料学实验室和一个能统筹一切部门的大政府。它要无数衣食无忧的国民为此奉献财富，需要几百万个高等知识分子为此贡献自己的头脑，数万不同的配套厂家供应最好的零部件。”<br><br>
-                “总之，需要一个富足的世界，一个伟大的文明才能完成它。”<br><br> ——伊恩<br><br> 一个自废墟中重生的世界。<br><br> 一轮即将迎来终结的纪元。<br><br>
-                一群在大地上争权夺利，为财富与力量而战的囚徒。<br><br> 一位凝望高天的少年。<br><br> 囚徒们从命运的窗里向外看，大都凝视泥土。<br><br> 唯有一个仰望着星。</dd>
+              <dt><span>阴天神隐</span><br><a href="https://www.mayiwsk.com/92_92526/index.html">高天之上</a></dt>
+              <dd> “我根本不关心这个世界的人活的怎么样，吃的饱不饱，能不能穿暖住好，有没有梦想希望。我不在乎他们的爱憎。”
+                “只是如果想要前往高天之上，需要一个完整的高等工业体系，一整套相关研究所，最先进的材料学实验室和一个能统筹一切部门的大政府。它要无数衣食无忧的国民为此奉献财富，需要几百万个高等知识分子为此贡献自己的头脑，数万不同的配套厂家供应最好的零部件。”
+                “总之，需要一个富足的世界，一个伟大的文明才能完成它。” ——伊恩 一个自废墟中重生的世界。 一轮即将迎来终结的纪元。
+                一群在大地上争权夺利，为财富与力量而战的囚徒。 一位凝望高天的少年。 囚徒们从命运的窗里向外看，大都凝视泥土。 唯有一个仰望着星。</dd>
             </dl>
-            <div class="clear"></div>
-          </div>
+            
+          </div><br>
 
           <div class="item">
             <div class="image"><a href="https://www.mayiwsk.com/115_115985/index.html"><img
                   src="../assets/index//115985s.jpg" alt="满唐华彩" width="120" height="150"></a></div>
             <dl>
-              <dt><span>怪诞的表哥</span><a href="https://www.mayiwsk.com/115_115985/index.html">满唐华彩</a></dt>
-              <dd> 盛唐繁花似锦，惊天裂变在即。天宝五载，他睁开眼，看到了<br><br> “昭昭有唐，天俾万国”的盛世雄风，名将如云，疆土广袤；能臣如雨，仓廪丰盈；诗歌璀璨，文华耀目；美色倾城，歌舞升平。<br><br>
-                他也看到了满朝如痴如醉，骄固奢靡，争权不休；江山飘摇，积弊丛生；胡儿叛乱，人如草芥。<br><br> 渔阳鼙鼓动地来，他偏要让此唐不失华彩。</dd>
+              <dt><span>怪诞的表哥</span><br><a href="https://www.mayiwsk.com/115_115985/index.html">满唐华彩</a></dt>
+              <dd> 盛唐繁花似锦，惊天裂变在即。天宝五载，他睁开眼，看到了 “昭昭有唐，天俾万国”的盛世雄风，名将如云，疆土广袤；能臣如雨，仓廪丰盈；诗歌璀璨，文华耀目；美色倾城，歌舞升平。
+                他也看到了满朝如痴如醉，骄固奢靡，争权不休；江山飘摇，积弊丛生；胡儿叛乱，人如草芥。 渔阳鼙鼓动地来，他偏要让此唐不失华彩。</dd>
             </dl>
-            <div class="clear"></div>
-          </div>
+            
+          </div><br>
 
           <div class="item">
             <div class="image"><a href="https://www.mayiwsk.com/113_113584/index.html"><img
                   src="../assets/index//113584s.jpg" alt="都重生了谁谈恋爱啊" width="120" height="150"></a></div>
             <dl>
-              <dt><span>错哪儿了</span><a href="https://www.mayiwsk.com/113_113584/index.html">都重生了谁谈恋爱啊</a></dt>
-              <dd> 奋斗到三十八岁买不起房，要结婚得先付三十万彩礼，省吃俭用大半生，卷到肝都碎了，可是钱呢？<br><br> 钱到底被谁赚走了？怀带着无数怨气的江勤重生十八岁，睁开眼的唯一念头就是创业搞钱。<br><br>
-                第一步，先把送出去的情书抢回来，翻个面，在校花惊愕的眼神中写下三行字：打什么都不能打工，能傍富婆就傍富婆。<br><br> 钱没了可以再赚，但良心没了赚的更多！社畜，永不为奴！至于恋爱？<br><br>
+              <dt><span>错哪儿了</span><br><a href="https://www.mayiwsk.com/113_113584/index.html">都重生了谁谈恋爱啊</a></dt>
+              <dd> 奋斗到三十八岁买不起房，要结婚得先付三十万彩礼，省吃俭用大半生，卷到肝都碎了，可是钱呢？ 钱到底被谁赚走了？怀带着无数怨气的江勤重生十八岁，睁开眼的唯一念头就是创业搞钱。
+                第一步，先把送出去的情书抢回来，翻个面，在校花惊愕的眼神中写下三行字：打什么都不能打工，能傍富婆就傍富婆。 钱没了可以再赚，但良心没了赚的更多！社畜，永不为奴！至于恋爱？
                 那玩意儿狗都不谈！</dd>
             </dl>
-            <div class="clear"></div>
-          </div>
+            
+          </div><br>
 
         </div>
         <div class="r">
           <h2>经典推荐</h2>
           <ul>
             <li><span class="s1">[科幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/105_105839/index.html">机武风暴</a></span><span class="s5">骷髅精灵</span></li>
+                  href="https://www.mayiwsk.com/105_105839/index.html"><br>机武风暴</a></span><span class="s5"><br>骷髅精灵</span></li>
             <li><span class="s1">[修真]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/95_95164/index.html">大夏文圣</a></span><span class="s5">七月未时</span></li>
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/72_72733/index.html">我七个姐姐绝世无双</a></span><span class="s5">橙年岁月</span>
-            </li>
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/113_113440/index.html">高考而已，你问我如何长生？</a></span><span
-                class="s5">欢颜笑语</span></li>
-            <li><span class="s1">[玄幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/9_9558/index.html">神印王座</a></span><span class="s5">唐家三少</span></li>
-            <li><span class="s1">[女生]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/71_71494/index.html">超级弃婿楚尘宋颜</a></span><span class="s5">梁少</span></li>
-            <li><span class="s1">[网游]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/57_57075/index.html">因为太怕倒霉就全点气运了</a></span><span class="s5">亿点玄机</span>
-            </li>
-            <li><span class="s1">[玄幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/49_49889/index.html">公子别秀</a></span><span class="s5">荣小荣</span></li>
-            <li><span class="s1">[其他]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/26_26594/index.html">抗战之杀敌爆装系统</a></span><span class="s5">董家老五</span>
-            </li>
+                  href="https://www.mayiwsk.com/95_95164/index.html"><br>大夏文圣</a></span><span class="s5"><br>七月未时</span></li>
+           
+     
           </ul>
-        </div>
-        <div class="clear"></div>
+        </div><br>
+        
       </div>
       <div class="novelslist">
 
@@ -91,24 +74,16 @@
             <div class="image"><img src="../assets/index//44826s.jpg" alt="太荒吞天诀" width="67" height="82"></div>
             <dl>
               <dt><a href="https://www.mayiwsk.com/44_44826/index.html">太荒吞天诀</a></dt>
-              <dd> 天地皆灵，万物皆苟，无名天地之时，有名万物之母，此乃吞天神鼎，可凝精作物，并八荒之心。<br><br>
-                得此鼎，吞四海，容八荒……一代邪神，踏天之路！关注微信公众号搜索：《铁马飞桥》点击关注，不定时有剧情方面的更新！<br><br> 公布一个群号：224382518</dd>
+              <dd> 天地皆灵，万物皆苟，无名天地之时，有名万物之母，此乃吞天神鼎，可凝精作物，并八荒之心。
+                得此鼎，吞四海，容八荒……一代邪神，踏天之路！关注微信公众号搜索：《铁马飞桥》点击关注，不定时有剧情方面的更新！ 公布一个群号：224382518</dd>
             </dl>
-            <div class="clear"></div>
+            
           </div>
           <ul>
             <li><a href="https://www.mayiwsk.com/97_97925/index.html">我有一剑</a>/青鸾峰上</li>
-            <li><a href="https://www.mayiwsk.com/51_51143/index.html">叶尘池瑶小说全文免费阅读</a>/叶尘池瑶</li>
+
             <li><a href="https://www.mayiwsk.com/54_54669/index.html">人道大圣</a>/莫默</li>
-            <li><a href="https://www.mayiwsk.com/30_30490/index.html">猎天争锋</a>/睡秋</li>
-            <li><a href="https://www.mayiwsk.com/0_626/index.html">绝代神主</a>/百里龙虾</li>
-            <li><a href="https://www.mayiwsk.com/18_18549/index.html">暴力丹尊</a>/李中有梦</li>
-            <li><a href="https://www.mayiwsk.com/72_72824/index.html">历劫我是认真的</a>/贰姑凉</li>
-            <li><a href="https://www.mayiwsk.com/6_6952/index.html">耐瑟瑞尔的辉煌</a>/黎明C</li>
-            <li><a href="https://www.mayiwsk.com/67_67385/index.html">武破九天</a>/安仔</li>
-            <li><a href="https://www.mayiwsk.com/1_1244/index.html">纯阳武神</a>/十步行</li>
-            <li><a href="https://www.mayiwsk.com/25_25381/index.html">我只想安静地打游戏</a>/十二翼黑暗炽天使</li>
-            <li><a href="https://www.mayiwsk.com/1_1646/index.html">神品道圣</a>/十二翼黑暗炽天使</li>
+          
           </ul>
         </div>
 
@@ -119,23 +94,15 @@
             <div class="image"><img src="../assets/index//53181s.jpg" alt="神秘复苏" width="67" height="82"></div>
             <dl>
               <dt><a href="https://www.mayiwsk.com/53_53181/index.html">神秘复苏</a></dt>
-              <dd> 五浊恶世，地狱已空，厉鬼复苏，人间如狱。这个世界鬼出现了......那么神又在哪里？<br><br> 求神救世，可世上已无神，只有鬼。——————群：623363217欢迎加入</dd>
+              <dd> 五浊恶世，地狱已空，厉鬼复苏，人间如狱。这个世界鬼出现了......那么神又在哪里？ 求神救世，可世上已无神，只有鬼。——————群：623363217欢迎加入</dd>
             </dl>
-            <div class="clear"></div>
+            
           </div>
           <ul>
-            <li><a href="https://www.mayiwsk.com/72_72183/index.html">论从天才到大能</a>/浮旅</li>
+
             <li><a href="https://www.mayiwsk.com/82_82480/index.html">纵目</a>/黄石翁</li>
             <li><a href="https://www.mayiwsk.com/24_24704/index.html">征战诸天世界</a>/迦太基的失落</li>
-            <li><a href="https://www.mayiwsk.com/86_86913/index.html">神话从童子功开始</a>/紫衣居士</li>
-            <li><a href="https://www.mayiwsk.com/54_54554/index.html">师叔万万岁</a>/东南俗人</li>
-            <li><a href="https://www.mayiwsk.com/16_16686/index.html">掠天记</a>/黑山老鬼</li>
-            <li><a href="https://www.mayiwsk.com/7_7367/index.html">仙域天尊</a>/金玉</li>
-            <li><a href="https://www.mayiwsk.com/39_39629/index.html">打穿西游的唐僧</a>/涂章溢.QD</li>
-            <li><a href="https://www.mayiwsk.com/55_55503/index.html">我可以点化万物</a>/雨中鱼欲歌</li>
-            <li><a href="https://www.mayiwsk.com/80_80308/index.html">女配修仙中</a>/岁月炼心</li>
-            <li><a href="https://www.mayiwsk.com/68_68569/index.html">仙丹给你毒药归我</a>/小呆昭</li>
-            <li><a href="https://www.mayiwsk.com/22_22898/index.html">大周仙吏</a>/荣小荣</li>
+     
           </ul>
         </div>
 
@@ -146,29 +113,21 @@
             <div class="image"><img src="../assets/index//28407s.jpg" alt="豪门第一宠：大叔，求放过" width="67" height="82"></div>
             <dl>
               <dt><a href="https://www.mayiwsk.com/28_28407/index.html">豪门第一宠：大叔，求放过</a></dt>
-              <dd> “丫头，敢再逃跑试试！”一不小心惹上晋城最尊贵的男人，从此，成了他捧在掌心的宝。<br><br>
-                世人眼里的他：狂傲，霸气，冷漠，不近女色，不容置疑！她眼中的他：邪恶，腹黑，狡猾，最重要的是，凶猛+无耻！<br><br>
-                听说他最宠老爷子领养回来的小丫头，宠得无法无天令人发指，百里夏表示她好委屈，他根本就是吃人不吐骨的恶魔！<br><br> “丫头，过来。”他坐在沙发上，笑得不怀好意：“听话，我会宠你……”</dd>
+              <dd> “丫头，敢再逃跑试试！”一不小心惹上晋城最尊贵的男人，从此，成了他捧在掌心的宝。
+                世人眼里的他：狂傲，霸气，冷漠，不近女色，不容置疑！她眼中的他：邪恶，腹黑，狡猾，最重要的是，凶猛+无耻！
+                听说他最宠老爷子领养回来的小丫头，宠得无法无天令人发指，百里夏表示她好委屈，他根本就是吃人不吐骨的恶魔！ “丫头，过来。”他坐在沙发上，笑得不怀好意：“听话，我会宠你……”</dd>
             </dl>
-            <div class="clear"></div>
+            
           </div>
           <ul>
-            <li><a href="https://www.mayiwsk.com/66_66606/index.html">重生过去震八方</a>/锋临天下</li>
+
             <li><a href="https://www.mayiwsk.com/2_2665/index.html">赵旭李晴晴小说免费全文免费阅读</a>/韦小鸨</li>
             <li><a href="https://www.mayiwsk.com/82_82437/index.html">爹地来了妈咪快跑呀</a>/大雾漫漫</li>
-            <li><a href="https://www.mayiwsk.com/82_82997/index.html">快穿之躺赢的女配</a>/琪琪家的猫</li>
-            <li><a href="https://www.mayiwsk.com/80_80040/index.html">回到九零，她在外科大佬圈火爆了</a>/肥妈向善</li>
-            <li><a href="https://www.mayiwsk.com/3_3501/index.html">神医杀手俏校花</a>/血缘</li>
-            <li><a href="https://www.mayiwsk.com/44_44001/index.html">学霸神级系统</a>/只剩下烟雨</li>
-            <li><a href="https://www.mayiwsk.com/31_31893/index.html">九十九度甜婚</a>/水卿卿</li>
-            <li><a href="https://www.mayiwsk.com/27_27499/index.html">一胎二宝：亿万首席爱妻入骨</a>/花容月下</li>
-            <li><a href="https://www.mayiwsk.com/64_64772/index.html">重生之老婆孩子热炕头</a>/辛巴树</li>
-            <li><a href="https://www.mayiwsk.com/54_54712/index.html">从千亿神豪开始签到</a>/深渊凝望</li>
-            <li><a href="https://www.mayiwsk.com/75_75380/index.html">我要做港岛豪门</a>/我是阿斗不扶</li>
+     
           </ul>
         </div>
 
-        <div class="clear"></div>
+        
       </div>
       <div class="novelslist">
 
@@ -178,25 +137,17 @@
             <div class="image"><img src="../assets/index//35933s.jpg" alt="天道之下" width="67" height="82"></div>
             <dl>
               <dt><a href="https://www.mayiwsk.com/35_35933/index.html">天道之下</a></dt>
-              <dd> 这个世界有妖魔鬼怪、魑魅魍魉，有奇术异法，也有权谋相争，但在接受过现代教育的穿越者眼中，探索未知永远摆在第一位！（正经脸）<br><br> 加入枢密府是为了学术研究<br><br>
-                勾搭女妖是为了学术研究<br><br> 一切都是为了研究，研究就是一切！<br><br> 公主：跟我造——也是为了研究吗！<br><br> 夏凡：那是为了创造研究的环境和培养研究的下一代！<br><br>
+              <dd> 这个世界有妖魔鬼怪、魑魅魍魉，有奇术异法，也有权谋相争，但在接受过现代教育的穿越者眼中，探索未知永远摆在第一位！（正经脸） 加入枢密府是为了学术研究
+                勾搭女妖是为了学术研究 一切都是为了研究，研究就是一切！ 公主：跟我造——也是为了研究吗！ 夏凡：那是为了创造研究的环境和培养研究的下一代！
                 PS：选词填空，不是造人。</dd>
             </dl>
-            <div class="clear"></div>
+            
           </div>
           <ul>
             <li><a href="https://www.mayiwsk.com/15_15447/index.html">龙起南洋</a>/流泪的鱼wyj</li>
             <li><a href="https://www.mayiwsk.com/34_34033/index.html">数风流人物</a>/瑞根</li>
-            <li><a href="https://www.mayiwsk.com/54_54406/index.html">林家娇女种田忙</a>/夜寒梓</li>
-            <li><a href="https://www.mayiwsk.com/83_83306/index.html">快穿之大佬又来虐渣了</a>/红烧虾米</li>
-            <li><a href="https://www.mayiwsk.com/2_2218/index.html">逆明1644</a>/天涯海跃</li>
-            <li><a href="https://www.mayiwsk.com/24_24608/index.html">重生南非当警察</a>/鲇鱼头</li>
-            <li><a href="https://www.mayiwsk.com/81_81546/index.html">山河锦绣</a>/有鹤听风</li>
-            <li><a href="https://www.mayiwsk.com/69_69071/index.html">大明合伙人</a>/加勒比海贼王</li>
-            <li><a href="https://www.mayiwsk.com/25_25919/index.html">蔬香世家</a>/沐清浅</li>
-            <li><a href="https://www.mayiwsk.com/3_3064/index.html">帝国的朝阳</a>/无语的命运</li>
-            <li><a href="https://www.mayiwsk.com/12_12742/index.html">锦衣</a>/上山打老虎额</li>
-            <li><a href="https://www.mayiwsk.com/84_84227/index.html">三国之袁氏天下</a>/丝雨如梦.CS</li>
+
+      
           </ul>
         </div>
 
@@ -206,24 +157,16 @@
             <div class="image"><img src="../assets/index//35811s.jpg" alt="一切从斗破苍穹开始" width="67" height="82"></div>
             <dl>
               <dt><a href="https://www.mayiwsk.com/35_35811/index.html">一切从斗破苍穹开始</a></dt>
-              <dd> （残光的新书《万界之无限副本》已经发布，求支持！）只是稍稍抱怨一下人生的苏邪，突然之间就穿越了，穿越的地方竟然是斗破苍穹的世界，一个普通人如何在强者如云的斗气大陆生存呢！<br><br>
+              <dd> （残光的新书《万界之无限副本》已经发布，求支持！）只是稍稍抱怨一下人生的苏邪，突然之间就穿越了，穿越的地方竟然是斗破苍穹的世界，一个普通人如何在强者如云的斗气大陆生存呢！
                 还好，苏邪觉醒了自己的金手指，崇拜系统，为了赚取崇拜点，苏邪只能在装逼的道路上越走越远了……</dd>
             </dl>
-            <div class="clear"></div>
+            
           </div>
           <ul>
             <li><a href="https://www.mayiwsk.com/19_19255/index.html">我抢了灭霸的无限手套</a>/宝月流光</li>
             <li><a href="https://www.mayiwsk.com/79_79551/index.html">魔王勇者你别跑</a>/跃动的茄子</li>
-            <li><a href="https://www.mayiwsk.com/29_29093/index.html">绝美冥妻</a>/浙三爷</li>
-            <li><a href="https://www.mayiwsk.com/83_83884/index.html">凛冬斗罗</a>/埃文瑞</li>
-            <li><a href="https://www.mayiwsk.com/80_80105/index.html">柯南之敬酒不吃吃罚酒</a>/晏梓宸</li>
-            <li><a href="https://www.mayiwsk.com/43_43805/index.html">我快亏成麻瓜了</a>/江公子阿宝</li>
-            <li><a href="https://www.mayiwsk.com/31_31967/index.html">精灵掌门人</a>/轻泉流响</li>
-            <li><a href="https://www.mayiwsk.com/88_88038/index.html">巫师的次元物语</a>/万象初心</li>
-            <li><a href="https://www.mayiwsk.com/86_86933/index.html">诡秘者的摩登时代</a>/年少不如归</li>
-            <li><a href="https://www.mayiwsk.com/0_197/index.html">我真的不开挂</a>/旧生</li>
-            <li><a href="https://www.mayiwsk.com/84_84817/index.html">我在东樱有间餐厅</a>/斯文客南宫恨</li>
-            <li><a href="https://www.mayiwsk.com/94_94554/index.html">斗破之人生模拟器</a>/云海中的鱼</li>
+
+       
           </ul>
         </div>
 
@@ -238,322 +181,129 @@
                 各位书友要是觉得《快穿：男神，有点燃！》还不错的话请不要忘记向您QQ群和微博里的朋友推荐哦！
               </dd>
             </dl>
-            <div class="clear"></div>
+            
           </div>
           <ul>
             <li><a href="https://www.mayiwsk.com/29_29373/index.html">玩偶游戏：少女病娇为哪般</a>/花花了</li>
             <li><a href="https://www.mayiwsk.com/25_25186/index.html">征战乐园</a>/黑心的大白</li>
-            <li><a href="https://www.mayiwsk.com/52_52088/index.html">诸天地球大融合</a>/人已成球</li>
-            <li><a href="https://www.mayiwsk.com/6_6404/index.html">时空之头号玩家</a>/风上忍</li>
-            <li><a href="https://www.mayiwsk.com/39_39659/index.html">诸天之从新做人</a>/惠鹏鹏</li>
-            <li><a href="https://www.mayiwsk.com/5_5905/index.html">史上最强狗熊系统</a>/七乐</li>
-            <li><a href="https://www.mayiwsk.com/78_78876/index.html">影视诸天逍遥行</a>/贫道爱烫头</li>
-            <li><a href="https://www.mayiwsk.com/68_68404/index.html">末世重生之带娃修行</a>/青竹苍苍</li>
-            <li><a href="https://www.mayiwsk.com/19_19081/index.html">星际之全能进化</a>/星河圣光</li>
-            <li><a href="https://www.mayiwsk.com/81_81405/index.html">终焉使徒</a>/黄火青</li>
-            <li><a href="https://www.mayiwsk.com/56_56350/index.html">蛇妻美人</a>/恰灵小道</li>
-            <li><a href="https://www.mayiwsk.com/74_74873/index.html">拯救诸天单身汉</a>/纪墨白</li>
-          </ul>
-        </div>
-        <div class="clear"></div>
-      </div>
-      <div id="newscontent">
 
-        <div class="l">
-          <h2>最近更新小说列表</h2>
-          <ul>
-
-            <li><span class="s1">[穿越小说]</span><span class="s2"><a href="https://www.mayiwsk.com/116_116979/index.html"
-                  target="_blank">汉末三十年</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/116_116979/50506920.html" target="_blank">舞榭歌台，风流总被雨打风吹去 188
-                  荆南之战（二）</a></span><span class="s4">慵懒的腊肉</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[都市小说]</span><span class="s2"><a href="https://www.mayiwsk.com/114_114069/index.html"
-                  target="_blank">闺女惨死后，年代老实人爹觉醒了</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/114_114069/50506936.html" target="_blank">第401章 高考结束</a></span><span
-                class="s4">阿狸和猫猫</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[都市小说]</span><span class="s2"><a href="https://www.mayiwsk.com/119_119896/index.html"
-                  target="_blank">我90分男神凭啥先主动？</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/119_119896/50506935.html" target="_blank">第343章 外孙加速器</a></span><span
-                class="s4">指尖繁华丶</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[都市小说]</span><span class="s2"><a href="https://www.mayiwsk.com/119_119029/index.html"
-                  target="_blank">绝色师尊受不了，赶我下山祸害师姐</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/119_119029/50506927.html" target="_blank">第763章 石油国董家？</a></span><span
-                class="s4">白首不相离</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[穿越小说]</span><span class="s2"><a href="https://www.mayiwsk.com/123_123147/index.html"
-                  target="_blank">重生之疯批美人爱装傻</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/123_123147/50506910.html" target="_blank">第五十六章是你干的？</a></span><span
-                class="s4">簌牧牧</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[修真小说]</span><span class="s2"><a href="https://www.mayiwsk.com/111_111439/index.html"
-                  target="_blank">道影</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/111_111439/50506933.html" target="_blank">第四百七十二章 新时代，阳谋</a></span><span
-                class="s4">太一生水</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[穿越小说]</span><span class="s2"><a href="https://www.mayiwsk.com/122_122236/index.html"
-                  target="_blank">被家暴致死，我靠弹幕杀疯了</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/122_122236/50506914.html" target="_blank">第046章 姐姐贴贴</a></span><span
-                class="s4">时时慢</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[玄幻小说]</span><span class="s2"><a href="https://www.mayiwsk.com/122_122442/index.html"
-                  target="_blank">穿越兽世：绑定生子系统后逆袭了</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/122_122442/50506905.html" target="_blank">第88章
-                  想让我给你生个崽，是吗？</a></span><span class="s4">青璇</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[都市小说]</span><span class="s2"><a href="https://www.mayiwsk.com/117_117685/index.html"
-                  target="_blank">恋爱？重生的我只想爆奖励</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/117_117685/50506911.html" target="_blank">第125章 待会和我一起回家</a></span><span
-                class="s4">起酥面包</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[网游小说]</span><span class="s2"><a href="https://www.mayiwsk.com/116_116958/index.html"
-                  target="_blank">都市传说：远古文明的遗产</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/116_116958/50506925.html" target="_blank">第270章嵌套幻境</a></span><span
-                class="s4">听书航海</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[穿越小说]</span><span class="s2"><a href="https://www.mayiwsk.com/113_113530/index.html"
-                  target="_blank">重生后我把皇子们卷哭了</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/113_113530/50506934.html" target="_blank">第279章 女人们</a></span><span
-                class="s4">刹时红瘦</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[网游小说]</span><span class="s2"><a href="https://www.mayiwsk.com/122_122101/index.html"
-                  target="_blank">刺客凶猛</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/122_122101/50506906.html" target="_blank">第107章
-                  惊动外赛区，最后储备？</a></span><span class="s4">初四兮</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[穿越小说]</span><span class="s2"><a href="https://www.mayiwsk.com/113_113745/index.html"
-                  target="_blank">嫡长女太冷酷，刀太快她收不住</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/113_113745/50506932.html" target="_blank">第540章大牢见故人</a></span><span
-                class="s4">火安安</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[都市小说]</span><span class="s2"><a href="https://www.mayiwsk.com/115_115381/index.html"
-                  target="_blank">校花难追？无所谓，她还有舍友</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/115_115381/50506916.html" target="_blank">第330章 资本家的基本技能</a></span><span
-                class="s4">纯良本良</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[科幻小说]</span><span class="s2"><a href="https://www.mayiwsk.com/115_115385/index.html"
-                  target="_blank">末世最卷基地长</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/115_115385/50506915.html" target="_blank">第345章 双星失踪</a></span><span
-                class="s4">夏日轻雪</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[穿越小说]</span><span class="s2"><a href="https://www.mayiwsk.com/117_117841/index.html"
-                  target="_blank">满门炮灰读我心后，全家造反了</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/117_117841/50506931.html" target="_blank">第515章 您一定要好好活着</a></span><span
-                class="s4">超爱小螃蟹</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[科幻小说]</span><span class="s2"><a href="https://www.mayiwsk.com/115_115634/index.html"
-                  target="_blank">学霸的军工科研系统</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/115_115634/50506928.html" target="_blank">第548章
-                  火炬-C.B.法拉利机床有限公司</a></span><span class="s4">十月廿二</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[其他小说]</span><span class="s2"><a href="https://www.mayiwsk.com/123_123129/index.html"
-                  target="_blank">谍战：特高课都没了，你说他忠诚</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/123_123129/50506922.html" target="_blank">第75章
-                  东野溟给军统传递消息</a></span><span class="s4">一曲赋江山</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[女生频道]</span><span class="s2"><a href="https://www.mayiwsk.com/123_123004/index.html"
-                  target="_blank">这个中洲队强到离谱</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/123_123004/50506918.html" target="_blank">第十七章大喜大悲</a></span><span
-                class="s4">云纪</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[都市小说]</span><span class="s2"><a href="https://www.mayiwsk.com/117_117059/index.html"
-                  target="_blank">穿越1998：这个锦衣卫杀疯了</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/117_117059/50506923.html" target="_blank">第四百三十六章 求助电话</a></span><span
-                class="s4">慎思量</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[都市小说]</span><span class="s2"><a href="https://www.mayiwsk.com/113_113560/index.html"
-                  target="_blank">香江：王者崛起</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/113_113560/50506929.html" target="_blank">0779【突发状况】</a></span><span
-                class="s4">镔铁</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[都市小说]</span><span class="s2"><a href="https://www.mayiwsk.com/120_120315/index.html"
-                  target="_blank">发癫后全娱乐圈对我避如蛇蝎</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/120_120315/50506912.html" target="_blank">第128章 隐藏大佬</a></span><span
-                class="s4">姜糖冰红茶</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[女生频道]</span><span class="s2"><a href="https://www.mayiwsk.com/120_120962/index.html"
-                  target="_blank">疑影随行</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/120_120962/50506908.html" target="_blank">121 怎么凶手就变成我了</a></span><span
-                class="s4">麒麟耀生</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[修真小说]</span><span class="s2"><a href="https://www.mayiwsk.com/120_120131/index.html"
-                  target="_blank">洪荒：当老好人觉醒缺德系统</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/120_120131/50506919.html" target="_blank">二百一十三章，收徒</a></span><span
-                class="s4">惜萧萧素雨</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[玄幻小说]</span><span class="s2"><a href="https://www.mayiwsk.com/115_115424/index.html"
-                  target="_blank">乱世：开局加入六扇门，横推天下</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/115_115424/50506917.html" target="_blank">447、巡察使到来</a></span><span
-                class="s4">三两忧愁</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[网游小说]</span><span class="s2"><a href="https://www.mayiwsk.com/117_117069/index.html"
-                  target="_blank">阴脉先生</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/117_117069/50506921.html" target="_blank">第二百一十三章 好大的胆子</a></span><span
-                class="s4">想看许多风景的兔子</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[修真小说]</span><span class="s2"><a href="https://www.mayiwsk.com/69_69693/index.html"
-                  target="_blank">紫气仙朝</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/69_69693/50506904.html" target="_blank">第55章
-                  南唐后主李鱼，小周后，刺客盖涅！</a></span><span class="s4">百里玺</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[网游小说]</span><span class="s2"><a href="https://www.mayiwsk.com/115_115500/index.html"
-                  target="_blank">从被沙奈朵捡到开始的宝可梦世界</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/115_115500/50506930.html" target="_blank">请假</a></span><span
-                class="s4">百夜幽灵</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[网游小说]</span><span class="s2"><a href="https://www.mayiwsk.com/115_115386/index.html"
-                  target="_blank">蔷薇庄园</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/115_115386/50506924.html" target="_blank">番外18 无所不能</a></span><span
-                class="s4">三月棠墨</span><span class="s5">02-19</span></li>
-
-            <li><span class="s1">[修真小说]</span><span class="s2"><a href="https://www.mayiwsk.com/60_60586/index.html"
-                  target="_blank">我的投影都是圣灵根</a></span><span class="s3"><a
-                  href="https://www.mayiwsk.com/60_60586/50506913.html" target="_blank">第一百六十六章 我有灵感</a></span><span
-                class="s4">苍天白鹤</span><span class="s5">02-19</span></li>
-
+      
           </ul>
         </div>
 
-
-
-        <div class="r">
-          <h2>最新入库小说</h2>
-          <ul>
-
-            <li><span class="s1">[其他]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123299/index.html">我成为了东北大帅</a></span><span class="s5">花飘地狱</span>
-            </li>
-
-            <li><span class="s1">[穿越]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123297/index.html">永夜圣典</a></span><span class="s5">棉袄在漏风</span></li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123308/index.html">扮演塔寨东叔卖冰糖，戏假成真了</a></span><span
-                class="s5">李巨爱吃土豆安</span></li>
-
-            <li><span class="s1">[科幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123304/index.html">末世：开局混沌神雷，为所欲为</a></span><span
-                class="s5">念淑云</span></li>
-
-            <li><span class="s1">[科幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123323/index.html">你管这叫废土维修工？</a></span><span class="s5">肥宅狐</span>
-            </li>
-
-            <li><span class="s1">[穿越]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123312/index.html">炮灰女配带空间开启了发家致富</a></span><span
-                class="s5">蓝珈珈</span></li>
-
-            <li><span class="s1">[玄幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123316/index.html">趋吉避凶，从黄金家族开始</a></span><span
-                class="s5">绿毛虫的梦</span></li>
-
-            <li><span class="s1">[网游]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123311/index.html">一人：我，张楚岚，童养媳夏禾</a></span><span
-                class="s5">朕三关</span></li>
-
-            <li><span class="s1">[穿越]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123313/index.html">权臣不请自来</a></span><span class="s5">南山知巷</span>
-            </li>
-
-            <li><span class="s1">[科幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123296/index.html">末世！无敌系统送九层楼超市</a></span><span
-                class="s5">亿千秋</span></li>
-
-            <li><span class="s1">[网游]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123309/index.html">当我的童话成为真理</a></span><span class="s5">奶茶猫狗</span>
-            </li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123320/index.html">校花别捣乱！学霸同桌才是我的白月光</a></span><span
-                class="s5">鱼奔奔</span></li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123325/index.html">杀神殿</a></span><span class="s5">凌风傲世本尊</span></li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123324/index.html">雪夜缠吻</a></span><span class="s5">清清清辞</span></li>
-
-            <li><span class="s1">[玄幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123305/index.html">两界：我以武道问长生</a></span><span class="s5">鱼儿小小</span>
-            </li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123307/index.html">神级选择：这个御兽师有亿点生猛</a></span><span
-                class="s5">三风11</span></li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123319/index.html">刚上班，美女上司竟要和我生娃</a></span><span
-                class="s5">寒无雪</span></li>
-
-            <li><span class="s1">[女生]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123300/index.html">上门天师</a></span><span class="s5">蓝天下的白菜</span>
-            </li>
-
-            <li><span class="s1">[女生]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123306/index.html">黑狱狂枭</a></span><span class="s5">午夜怪鸽</span></li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123322/index.html">追尾必嫁？我真不知你是大明星啊</a></span><span
-                class="s5">玻璃爱上猫</span></li>
-
-            <li><span class="s1">[女生]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123314/index.html">快穿：病弱美人靠撒娇驯服反派</a></span><span
-                class="s5">海眠泡泡</span></li>
-
-            <li><span class="s1">[网游]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123318/index.html">他们越反对，越是说明我做对了</a></span><span
-                class="s5">金属雨点</span></li>
-
-            <li><span class="s1">[玄幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123298/index.html">归元神墟</a></span><span class="s5">沣七川</span></li>
-
-            <li><span class="s1">[科幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123321/index.html">绑定系统后每天都是社死现场</a></span><span
-                class="s5">呆萌莓酱</span></li>
-
-            <li><span class="s1">[穿越]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123302/index.html">盖世六皇子</a></span><span class="s5">熬夜小王子</span>
-            </li>
-
-            <li><span class="s1">[科幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123315/index.html">很诱惑，快穿后她被高岭男主雄竞</a></span><span
-                class="s5">烁绮云</span></li>
-
-            <li><span class="s1">[穿越]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123310/index.html">叮！暴躁世子妃已上线</a></span><span
-                class="s5">酸酸的松松</span></li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123303/index.html">都重生了谁还贷款买房结婚啊</a></span><span
-                class="s5">小松太郎</span></li>
-
-            <li><span class="s1">[玄幻]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123301/index.html">神印王座前传</a></span><span class="s5">雪落心冷</span>
-            </li>
-
-            <li><span class="s1">[都市]</span><span class="s2"><a
-                  href="https://www.mayiwsk.com/123_123317/index.html">四合院：秦家老祖恐怖如斯！</a></span><span
-                class="s5">生产队的大懒驴</span></li>
-
-          </ul>
-
-        </div>
-        <!-- <div class="clear"></div> -->
-      </div>
+      
     </div>
 
   </div>
-
+  </div>
 </template>
 
-<script>
-
+<script >
+import Header from '../views/Header.vue';
+export default{
+  components:
+  {'top':Header,}
+}
 
 </script>
 
-<style>
+<style scoped>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.novelslist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1 1 300px;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  margin-right: 15px;
+}
+
+.image img {
+  width: 67px;
+  height: 82px;
+  border-radius: 5px;
+}
+
+dl {
+  flex: 1;
+}
+
+dt {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+dd {
+  color: #666;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+ul li {
+  margin-bottom: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+span{
+    background: linear-gradient(to right, #ffcc00, #ff6666);
+    -webkit-background-clip: text;
+    color: transparent; /* 隐藏实际文本颜色 */
+
+}
+
 
 
 </style>

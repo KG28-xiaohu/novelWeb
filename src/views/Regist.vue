@@ -1,5 +1,7 @@
 <template>
-  <div class="app">
+  
+  <div class="regist">
+    <!-- <top></top> -->
     <div id="main">
       <div id="content" style="width: 800px;margin-left: 400px;">
         <br />
@@ -16,7 +18,7 @@
                   <input
                     type="text"
                     class="text"
-                    name="SignupForm[username]"
+                    v-model="user.account"
                     id="regusername"
                     size="25"
                     maxlength="30"
@@ -33,7 +35,7 @@
                   <input
                     type="password"
                     class="text"
-                    name="SignupForm[password]"
+                    v-model="user.password"
                     id="regpassword"
                     size="25"
                     maxlength="20"
@@ -44,30 +46,13 @@
               </tr>
               <tr>
                 <td class="odd" >
-                  重复密码<span class="hottext">(必填)</span>
-                </td>
-                <td class="even">
-                  <input
-                    type="password"
-                    class="text"
-                    name="repassword"
-                    id="regrepassword"
-                    size="25"
-                    maxlength="20"
-                    style="width: 160px"
-                  />
-                  <span id="repassmsg"></span>
-                </td>
-              </tr>
-              <tr>
-                <td class="odd" >
-                  Email<span class="hottext">(必填)</span>
+                  Email<span class="hottext"></span>
                 </td>
                 <td class="even">
                   <input
                     type="text"
                     class="text"
-                    name="SignupForm[email]"
+                    v-model="user.email"
                     id="regemail"
                     size="25"
                     maxlength="60"
@@ -77,22 +62,7 @@
                   >
                 </td>
               </tr>
-              <tr>
-                <td class="odd" >
-                  验证码<span class="hottext">(必填)</span>
-                </td>
-                <td class="even">
-                  <input
-                    type="text"
-                    class="text"
-                    name="SignupForm[captcha]"
-                    id="captcha"
-                    size="25"
-                    maxlength="60"
-                    style="width: 160px"
-                  />
-                </td>
-              </tr>
+             
               <tr>
                 <td class="odd" >性别</td>
                 <td class="even">
@@ -101,7 +71,7 @@
                   <input
                     type="radio"
                     class="radio"
-                    name="sex"
+                    v-model="user.sex"
                     value="0"
                     checked="checked"
                   />保密
@@ -113,7 +83,7 @@
                   <input
                     type="text"
                     class="text"
-                    name="qq"
+                    v-model="user.QQ"
                     id="qq"
                     size="25"
                     maxlength="15"
@@ -128,7 +98,7 @@
                   <input
                     type="text"
                     class="text"
-                    name="url"
+                    v-model="user.personalWeb"
                     id="url"
                     size="25"
                     maxlength="100"
@@ -148,14 +118,14 @@
                   />
                 </td>
                 <td class="even">
-                  <input
+                  <button
                     type="submit"
                     class="button"
-                    name="submit"
                     id="submit"
-                    value="提 交"
-                  />
-                </td>
+                    @click="login()"
+                  >提交</button>&nbsp;
+                  <button @click="$router.push('/')" class="button">返回</button>
+                </td> 
               </tr>
             </tbody>
           </table>
@@ -168,17 +138,22 @@
 
 <script>
 import axios from "../hooks/request.js"
+import  Header  from "../views/Header.vue";
 export default {
+  components:{
+    'top':Header,
+    
+  },
   data() {
     // 验证账号
-    var checkUserName = (rule, value, callback) => {
+    var checkUserName = (value, callback) => {
       if (!value) {
         return callback(new Error("请输入账号"));
       }else{
         callback();
       }
     }
-    var checkPassword = (rule, value, callback) => {
+    var checkPassword = (value, callback) => {
       if (!value) {
         callback(new Error("请输入密码"));
       } else {
@@ -188,41 +163,34 @@ export default {
     return {
       // 登录账户
       user: {
-        // 账号
-        username:"",
-        // 密码
+        account:"",
         password: "",
-      },
-      // 验证
-      rules: {
-        username: [{ validator: checkUserName, trigger: "blur" }],
-        password: [{ validator: checkPassword, trigger: "blur" }],
+        email:"",
+        sex:"",
+        QQ:"",
+        personalWeb:"",
       },
     };
   },
   methods: {
     login(){
-      axios.post("/user/login",{
-        account:this.user.username,
-        pwd:this.user.password
-      },{headers:{"Content-Type":"application/x-www-form-urlencoded"}})
+      axios.post("/user/enroll",this.user,
+      {headers:{"Content-Type":"application/json"}})
       .then((res) => {
         if(res.data.code===200){
           localStorage.setItem("token",res.data.data)
-          this.$router.push("/layout")
+          this.$router.push("/")
         }else{
           alert(res.data.msg)
         }
       })
     },
-    resetForm(formName){
-      this.$refs[formName].resetFields();
-    },
+    
   },
 };
 </script>
 
-<style>
+<style scoped>
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -231,7 +199,7 @@ body {
     background: linear-gradient(to right, #ff9a9e, #fad0c4);
 }
 
-.app {
+.regist {
     
     width: 100%;;
 
@@ -333,98 +301,6 @@ body {
 }
 #main{
     border-top: 2px solid;
-    background: radial-gradient(circle at center, #e7161d, #18e567);
+    background: radial-gradient(circle at center, #ebeff0, #18e567);
 }
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-}
-
-.app {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.ywtop_con {
-    text-align: right;
-}
-
-.nri a {
-    color: #333;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.header_search {
-    margin-top: 20px;
-}
-
-.search {
-    padding: 5px;
-    width: 70%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-#sss {
-    padding: 6px 12px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-.nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.nav ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
-.grid {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.grid caption {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.grid td {
-    padding: 5px;
-}
-
-.text {
-    padding: 5px;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.button {
-    padding: 8px 16px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-} */
 </style>

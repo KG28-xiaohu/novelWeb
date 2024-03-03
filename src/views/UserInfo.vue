@@ -1,24 +1,7 @@
 <template>
-  <div id="app"> 
+  <div class="userinfo"> 
     <div id="main">
       <div id="content">
-        <center>
-          <div id="admin">
-            欢迎您：
-            admin
-            User &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>书架</b>:
-            <a
-              href="https://www.mayiwsk.com/modules/article/bookcase.php?uid=213"
-              >会员书架</a
-            >
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>资料</b>:
-            <a href="https://www.mayiwsk.com/userdetail.php?uid=213"
-              >查看资料</a
-            >&nbsp;
-            <a href="https://www.mayiwsk.com/useredit.php?uid=213">修改资料</a>
-            <p>修改密码</p>
-          </div>
-        </center>
         <table class="grid" width="88%" align="center">
           <caption>
             用户信息
@@ -100,7 +83,7 @@
 <script setup>
 </script>
 
-<style>
+<style scoped>
 /* 设置背景颜色 */
 body {
   background-color: #f7f7f7;

@@ -1,199 +1,194 @@
 <template>
-  <div id="app">
-        <div class="nri">
-            <div class="cc">
-              <div class="txt">账号：</div>
-              <div class="inp">
-                <input type="text" name="LoginForm[username]" />
-              </div>
-            </div>
-            <div class="cc">
-              <div class="txt">密码：</div>
-              <div class="inp">
-                <input type="password" name="LoginForm[password]" />
-              </div>
-            </div>
-            <div class="frii">
-              <input type="submit" class="int" value="登录" />
-            </div>
-            <div class="ccc">
-              <div class="txtt" style="margin-left: 90px;">
-                <a href="https://www.mayiwsk.com/getpass.php">忘记密码</a>
-              </div>
-              <div class="txtt">
-                <a href="https://www.mayiwsk.com/register.php">用户注册</a>
-              </div>
-            </div>
-         
+  <div class="login">
+    <div class="nri">
+      <form action="">
+        <div class="cc">
+          <div class="txt">账号：</div>
+          <div class="inp">
+            <input  v-model="user.account" />
+          </div>
+        </div>
+        <div class="cc">
+          <div class="txt">密码：</div>
+          <div class="inp">
+            <input
+              v-model="user.password"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="frii">
+        <button type="submit" class="int" @click="login()">登录</button>
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="frii">
+        <router-link type="submit" class="int" to="/">返回</router-link>
+      </div>
+
+      <div class="ccc">
+        <div class="txtt" style="margin-left: 10px">
+          <router-link to="/ChangePwd">忘记密码</router-link>
+        </div>
+        <div class="txtt">
+          <router-link to="/Regist">用户注册</router-link>
         </div>
       </div>
     </div>
-
-
-    
   </div>
 </template>
 
-<script setup>
-var d = document;
-if (d.ready === undefined) {
-  var ie = !!(window.attachEvent && !window.opera);
-  var wk = /webkit\/(\d+)/i.test(navigator.userAgent) && RegExp.$1 < 525;
-  var fn = [];
-  var run = function () {
-    for (var i = 0; i < fn.length; i++) fn[i]();
-  };
-  d.ready = function (f) {
-    if (!ie && !wk && d.addEventListener)
-      return d.addEventListener("DOMContentLoaded", f, false);
-    if (fn.push(f) > 1) return;
-    if (ie)
-      (function () {
-        try {
-          d.documentElement.doScroll("left");
-          run();
-        } catch (err) {
-          setTimeout(arguments.callee, 0);
-        }
-      })();
-    else if (wk)
-      var t = setInterval(function () {
-        if (/^(loaded|complete)$/.test(d.readyState)) clearInterval(t), run();
-      }, 0);
-  };
-}
+<script>
+// var d = document;
+// if (d.ready === undefined) {
+//   var ie = !!(window.attachEvent && !window.opera);
+//   var wk = /webkit\/(\d+)/i.test(navigator.userAgent) && RegExp.$1 < 525;
+//   var fn = [];
+//   var run = function () {
+//     for (var i = 0; i < fn.length; i++) fn[i]();
+//   };
+//   d.ready = function (f) {
+//     if (!ie && !wk && d.addEventListener)
+//       return d.addEventListener("DOMContentLoaded", f, false);
+//     if (fn.push(f) > 1) return;
+//     if (ie)
+//       (function () {
+//         try {
+//           d.documentElement.doScroll("left");
+//           run();
+//         } catch (err) {
+//           setTimeout(arguments.callee, 0);
+//         }
+//       })();
+//     else if (wk)
+//       var t = setInterval(function () {
+//         if (/^(loaded|complete)$/.test(d.readyState)) clearInterval(t), run();
+//       }, 0);
+//   };
+// }
 
-d.ready(reloadcode);
+// d.ready(reloadcode);
 
-function reloadcode() {
-  var verify = document.getElementById("showcode");
-  verify.setAttribute("src", "/code.php?" + Math.random());
-}
-const colors = ["#0077FF", "#00BBFF", "#80FFAA", "#FFD580", "#FFAA00", "#FF5500", "#FF0055"];
+// function reloadcode() {
+//   var verify = document.getElementById("showcode");
+//   verify.setAttribute("src", "/code.php?" + Math.random());
+// }
+// const colors = ["#0077FF", "#00BBFF", "#80FFAA", "#FFD580", "#FFAA00", "#FF5500", "#FF0055"];
 
-function changeBackgroundColor() {
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  const randomColor = colors[randomIndex];
-  document.body.style.backgroundColor = randomColor;
-}
+// function changeBackgroundColor() {
+//   const randomIndex = Math.floor(Math.random() * colors.length);
+//   const randomColor = colors[randomIndex];
+//   document.body.style.backgroundColor = randomColor;
+// }
 
-setInterval(changeBackgroundColor, 2000);
-
+// setInterval(changeBackgroundColor, 2000);
+import axios from "../hooks/request.js";
+export default {
+  data() {
+    // 验证账号
+    var checkUserName = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error("请输入账号"));
+      } else {
+        callback();
+      }
+    };
+    var checkPassword = (rule, value, callback) => {
+      if (!value) {
+        callback(new Error("请输入密码"));
+      } else {
+        callback();
+      }
+    };
+    return {
+      // 登录账户
+      user: {
+        // 账号
+        account: "",
+        // 密码
+        password: "",
+      },
+    };
+  },
+  methods: {
+    login() {
+      axios
+        .post(
+          "/user/login",
+          {
+            account: this.user.account,
+            password: this.user.password,
+          },
+          { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
+        )
+        .then((res) => {
+          if (res.data.code === 200) {
+            localStorage.setItem("token", res.data.data);
+            alert(res.data.msg)
+            this.$router.push('/')
+          } else {
+            alert(res.data.msg);
+          }
+        });
+    },
+  },
+};
 </script>
 
-<style>
-/* 设置页面字体样式 */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  
-}
-
-/* 设置登录表单样式 */
-.ywtop_con {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
+<style scoped>
+/* 基本样式 */
+.login {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .cc {
-  display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .txt {
-  width: 80px;
-  text-align: right;
-  margin-right: 10px;
+  display: inline-block;
+  width: 60px;
 }
 
-.inp input[type="text"],
-.inp input[type="password"] {
-  border: 1px solid #ccc;
-  padding: 5px;
-  font-size: 14px;
+.inp input {
   width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
 }
 
 .frii {
-  margin-top: 20px;
-  margin-left: 242px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .int {
-  background-color: #007fff;
+  padding: 10px 20px;
+  background-color: #337ab7;
   color: #fff;
-  padding: 5px 10px;
   border: none;
-  font-size: 14px;
+  cursor: pointer;
 }
 
 .ccc {
-  display: flex;
-  justify-content: space-between;
   margin-top: 10px;
+  /* text-align: center; */
 }
 
-.txtt a {
-  color: #000000;
-  font-size: 14px;
-}
-
-/* 设置搜索框样式 */
-.header_search {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.search {
-  border: 1px solid #ccc;
-  padding: 5px;
-  font-size: 14px;
-  width: 400px;
-}
-
-#sss {
-  background-color: #007fff;
-  color: #fff;
-  padding: 5px 10px;
-  border: none;
-  font-size: 14px;
-}
-
-/* 设置导航栏样式 */
-.nav {
-  background-color: #007fff;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav li {
+.txtt {
+  display: inline-block;
   margin-right: 20px;
 }
 
-.nav a {
-  color: #fff;
+/* 链接样式 */
+.txtt a {
+  color: #337ab7;
   text-decoration: none;
-  font-size: 14px;
 }
 
-.nav a:hover {
+.txtt a:hover {
   text-decoration: underline;
 }
-.nri{
-  margin-top: 20px;
-}
-
 </style>
 

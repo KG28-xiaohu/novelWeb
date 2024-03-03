@@ -7,40 +7,33 @@ const routes = [
   {
     path: '/',
     name: 'index',
-    component: () => import('../views/Header.vue'),
-    children: [
-      {
-        path: '/',
-        component: () => import('../views/Index.vue')
-      }, 
-      // {
-      //   path: '/bookstore',
-      //   component: () => import('../views/BookStore.vue')
-      // }, 
-      // {
-      //   path: '/NovelDetail',
-      //   component: () => import('../views/NovelWebContent.vue')
-      // }, 
-      // {
-      //   path: '/FictionClassification',
-      //   component: () => import('../views/FictionClassification.vue')
-      // }, 
-      // {
-      //   path: '/ChangePwd',
-      //   component: () => import('../views/ChangePwd.vue')
-      // },
-      // {
-      //   path: '/Login',
-      //   component: () => import('../views/Login.vue')
-      // },
-      // {
-      //   path: '/ChangePwd',
-      //   component: () => import('../views/Regist.vue')
-      // },
-    ]
+    component: () => import('../views/Index.vue'),
   },
 
-
+  {
+    path: '/bookstore',
+    component: () => import('../views/BookStore.vue')
+  },
+  {
+    path: '/NovelDetail',
+    component: () => import('../views/NovelWebContent.vue')
+  },
+  {
+    path: '/FictionClassification',
+    component: () => import('../views/FictionClassification.vue')
+  },
+  {
+    path: '/ChangePwd',
+    component: () => import('../views/ChangePwd.vue')
+  },
+  {
+    path: '/Login',
+    component: () => import('../views/Login.vue')
+  },
+  {
+    path: '/Regist',
+    component: () => import('../views/Regist.vue')
+  },
 ]
 
 

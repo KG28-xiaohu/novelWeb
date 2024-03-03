@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="bookstore">
     <div id="main">
       <div id="content">
         <form
@@ -29,7 +29,7 @@
 <script setup>
 </script>
 
-<style>
+<style scoped>
 /* 设置全局样式 */
 body {
   font-family: Arial, sans-serif;

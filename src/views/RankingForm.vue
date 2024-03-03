@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="rankingform">
     <div id="main">
         <div id="tops_nav">
           <ol>
@@ -793,7 +793,7 @@
 // 每个类型找三个
 </script>
 
-<style>
+<style scoped>
 /* Reset默认样式 */
 * {
   margin: 0;
@@ -808,7 +808,7 @@ body {
   color: #333;
 }
 
-#app {
+.rankingform {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3px;

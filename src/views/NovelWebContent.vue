@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="background-color: rgb(204, 232, 207)">
+  <div class="novelwebcontent" style="background-color: rgb(204, 232, 207)">
     <div id="banner" style="display: none"></div>
     <div class="content_read">
       <div class="box_con">
@@ -207,7 +207,7 @@
 <script setup>
 </script>
 
-<style>
+<style scoped>
 /* 设置页面背景颜色 */
 body {
   background-color: #f2f2f2;

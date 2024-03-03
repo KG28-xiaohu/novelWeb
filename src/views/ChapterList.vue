@@ -1,74 +1,5 @@
 <template>
-  <div id="app">
-    <div class="ywtop">
-      <div class="ywtop_con">
-        <div class="nri">
-          Hi,User
-          &nbsp;&nbsp;<a
-            href="https://www.mayiwsk.com/modules/article/bookcase.php"
-            target="_top"
-            >我的书架</a
-          >
-          |
-          
-          <a href="https://www.mayiwsk.com/userdetail.php?uid=213" target="_top"
-            >查看资料</a
-          >
-          |
-          <a href="https://www.mayiwsk.com/logout.php" target="_self"
-            >退出登录</a
-          >&nbsp;
-        </div>
-      </div>
-    </div>
-
-    <div class="header">
-      <div class="header_search">
-
-        <form
-          name="form"
-          action="https://www.mayiwsk.com/modules/article/search.php"
-          id="sform"
-          method="post"
-        ><select id="stype" name="searchtype" style="displany: none">
-            <option value="articlename" selected="">书名</option>
-            <option value="author">作者</option>
-          </select>
-          <input
-            type="text"
-            value="可搜书名和作者，请您少字也别输错字。"
-            name="searchkey"
-            class="search"
-            id="searchkey"
-            onclick="ttt()"
-            baidusug="2"
-          /><button id="sss" type="submit">搜 索</button
-          >
-        </form>
-      </div>
-    </div>
-    <div class="nav">
-      <ul>
-        <li><a href="https://www.mayiwsk.com/">首页</a></li>
-        <li>
-          <a href="https://www.mayiwsk.com/modules/article/bookcase.php"
-            >我的书架</a
-          >
-        </li>
-        <li>
-          <a href="https://www.mayiwsk.com/xuanhuanxiaoshuo/">玄幻小说</a>
-        </li>
-        <li><a href="https://www.mayiwsk.com/xiuzhenxiaoshuo/">修真小说</a></li>
-        <li><a href="https://www.mayiwsk.com/dushixiaoshuo/">都市小说</a></li>
-        <li>
-          <a href="https://www.mayiwsk.com/chuanyuexiaoshuo/">穿越小说</a>
-        </li>
-        <li><a href="https://www.mayiwsk.com/wangyouxiaoshuo/">网游小说</a></li>
-        <li><a href="https://www.mayiwsk.com/kehuanxiaoshuo/">科幻小说</a></li>
-        <li><a href="https://www.mayiwsk.com/paihangbang/">排行榜单</a></li>
-        <li><a href="https://www.mayiwsk.com/wanben/">完本小说</a></li>
-      </ul>
-    </div>
+  <div class="chapterlist">
     <div id="banner" style="display: none"></div>
     <div class="box_con">
       <div class="con_top">
@@ -128,7 +59,6 @@
               >第88章 结成同盟</a
             >
           </dd>
-          </dd>
 
           <dt>《女尊原神：胡桃卖棺材本只为娶我》正文</dt>
 
@@ -156,7 +86,7 @@
 <script setup>
 </script>
 
-<style>
+<style scoped>
 body {
   background-color: #FFDAB9;
 }

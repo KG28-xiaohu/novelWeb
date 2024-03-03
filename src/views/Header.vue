@@ -1,44 +1,30 @@
 <template>
-  <div class="app">
+  <div class="header">
     <div>
       <div class="navigation">
-        <div v-if="username != null && username != ''" class="ywtop1">
+        <div v-if="account != null && account != ''" class="ywtop1">
           <div class="nri">
-            Hi,{{ username }} &nbsp;&nbsp;<router-link
+            Hi,{{ account }} &nbsp;&nbsp;<router-link
               :to="{
                 name: 'BookStore',
-                param: { username: username },
+                param: { account: account },
               }"
               >我的书架</router-link
             >
             &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="../views/UserInfo.vue">查看资料</a>
             &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-            <a>退出登录</a>&nbsp;
+            <a @click="exit()">退出登录</a>&nbsp;
           </div>
         </div>
-        <div v-if="username == null || username == ''" class="ywtop2">
-          <form name="frmlogin" id="frmlogin" method="post" action="/login.php">
-            <div class="cc">
-              <div class="txt">账号：</div>
-              <div class="inp">
-                <input type="text" name="LoginForm[username]" />
-              </div>
-            </div>
-            <div class="cc">
-              <div class="txt">密码：</div>
-              <div class="inp">
-                <input type="password" name="LoginForm[password]" />
-              </div>
-            </div>
-            <div class="frii">
-              <input type="submit" class="int" value=" " />
-            </div>
-            <div class="ccc">
-              <div class="txtt"><a href="/getpass.php">忘记密码</a></div>
-              <div class="txtt"><a href="/register.php">用户注册</a></div>
-            </div>
-          </form>
+        <div v-if="account == null || account == ''" class="ywtop2">
+          <div style="">
+           <router-link to="/Login"> 登陆账户</router-link>&nbsp; &nbsp;
+            <router-link to="/ChangePwd">忘记密码</router-link>&nbsp; &nbsp;
+            <router-link to="/Regist">用户注册</router-link>
+          </div>
+          <button @click="login()">登录</button>
+    
         </div>
       </div>
     </div>
@@ -47,7 +33,7 @@
         <li><router-link :to="{ name: 'Index.vue' }">首页</router-link></li>
         <li>
           <router-link
-            :to="{ name: 'BookStore', param: { username:username } }"
+            :to="{ name: 'BookStore', param: { account: account } }"
             >我的书架</router-link
           >
         </li>
@@ -172,46 +158,51 @@ import axios from "../hooks/request";
 export default {
   data() {
     return {
-      username: "User",
-      imgPath: "D:/Sainthood thief Web/src/assets/index/626s.jpg",
+      // account: "User",
+      // imgPath: "D:/Sainthood thief Web/src/assets/index/626s.jpg",
       BookList: {
-        type:"wad"
+        type: "wad",
       },
+      user:{
+        account:'',
+        password:''
+      }
     };
   },
   // created() {
   //   this.getUserInfo();
 
   // },
-  // methods: {
-  //   getUserInfo() {
-  //     axios.get("user/function/getUserInfo", {}).then((res) => {
-  //       var BookList = res.data.data;
-  //       this.username = BookList.username;
-  //       this.imgPath = "http://localhost:8090/" + BookList.imgPath;
-  //     });
-  //   },
-  //   exit() {
-  //     if (confirm("确定退出吗？")) {
-  //       localStorage.removeItem("token");
-  //       this.$router.push("/");
-  //     }
-  //   },
-  // },
+  methods: {
+    // getUserInfo() {
+    //   axios.get("user/function/getUserInfo", {}).then((res) => {
+    //     var BookList = res.data.data;
+    //     this.account = BookList.account;
+    //     this.imgPath = "http://localhost:8090/" + BookList.imgPath;
+    //   });
+    // },
+   
+    exit() {
+      if (confirm("确定退出吗？")) {
+        localStorage.removeItem("token");
+        // this.$router.push("/Index");
+      }
+    },
+  },
 };
 </script>
 
-<style>
+<style scoped>
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.app {
+.header {
   max-width: 1200px;
   margin: 0 auto;
-  
+  background: rgb(225, 218, 218);
 }
 
 .navigation {
@@ -226,38 +217,6 @@ body {
 .ywtop2 {
   margin-top: 10px;
 }
-
-.nri {
-  display: flex;
-  /* align-items: center; */
-}
-
-.frmlogin {
-  margin-top: 10px;
-}
-
-.cc {
-  margin-bottom: 10px;
-}
-
-.txt {
-  font-weight: bold;
-}
-
-.inp input {
-  width: 100%;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.int {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-.nav{width: 100%;}
 
 ul {
   list-style-type: none;
@@ -297,5 +256,7 @@ button {
   border: none;
   cursor: pointer;
 }
-
+a {
+  cursor: pointer;
+}
 </style>
